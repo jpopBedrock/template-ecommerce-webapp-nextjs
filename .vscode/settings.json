@@ -1,0 +1,6 @@
+{
+    "netlify.api_token": "N9cF4KrUImFr3E7nEW0Bu8LLTLbK3cX2n9ZCiG5rYrs",
+    "netlify.build_hook": "https://api.netlify.com/build_hooks/64e52621f8a5742c3c8db8e5",
+    "netlify.set_interval": 1000,
+    "netlify.site_id": "4a7af386-b64a-43f5-9c3f-1c1c65d3e7d9"
+}
