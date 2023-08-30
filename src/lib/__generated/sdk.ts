@@ -1121,7 +1121,7 @@ export type CfPageProductNestedFilter = {
 
 export type ImageFieldsFragment = { __typename: 'Asset', title?: string | null, description?: string | null, width?: number | null, height?: number | null, url?: string | null, contentType?: string | null, sys: { __typename?: 'Sys', id: string } };
 
-export type PageLandingFieldsFragment = { __typename: 'PageLanding', internalName?: string | null, heroBannerHeadline?: string | null, heroBannerHeadlineColor?: string | null, sys: { __typename?: 'Sys', id: string, spaceId: string }, seoFields?: (
+export type PageLandingFieldsFragment = { __typename: 'PageLanding', internalName?: string | null, jpopCustom?:string | null, heroBannerHeadline?: string | null, heroBannerHeadlineColor?: string | null, sys: { __typename?: 'Sys', id: string, spaceId: string }, seoFields?: (
     { __typename?: 'ComponentSeo' }
     & SeoFieldsFragment
   ) | null, heroBannerImage?: (

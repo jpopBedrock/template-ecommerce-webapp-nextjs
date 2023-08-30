@@ -25,6 +25,7 @@ export const HeroBanner = ({
   heroBannerHeadline,
   heroBannerHeadlineColor,
   heroBannerImage,
+  jpopCustom,
   sys: { id: entryId },
 }: PageLandingFieldsFragment) => {
   const router = useRouter();
@@ -85,12 +86,14 @@ export const HeroBanner = ({
       gridRow={2}
       gridColumn={1}
       mt={`-${HEADER_HEIGHT}px`}
-      {...inspectorProps({ fieldId: 'heroBannerImage' })}>
+      {...inspectorProps({ fieldId: 'heroBannerImage' })}
+    >
       <StyledBox
         gridColumnStart={2}
         zIndex={0}
         gridArea={{ base: '1 / 1 / 2 / 2' }}
-        maxHeight={{ base: '50vh', lg: '80vh' }}>
+        maxHeight={{ base: '50vh', lg: '80vh' }}
+      >
         {heroBannerImage?.url && (
           <CtfImage
             imageProps={{
@@ -107,13 +110,15 @@ export const HeroBanner = ({
         gridArea={{ base: '1 / 1 / 2 / 2' }}
         overflow="hidden"
         justifyContent="flex-end"
-        maxHeight={{ base: '50vh', lg: '80vh' }}>
+        maxHeight={{ base: '50vh', lg: '80vh' }}
+      >
         <Container ref={containerRef}>
           <motion.div
             initial={false}
             animate={{
               opacity: headingVisible ? 1 : 0,
-            }}>
+            }}
+          >
             <Heading
               {...inspectorProps({ fieldId: 'heroBannerHeadline' })}
               ref={headingRef}
@@ -121,7 +126,8 @@ export const HeroBanner = ({
               letterSpacing="-0.11em"
               color={heroBannerHeadlineColor || 'white'}
               transform="translateY(0.33em)"
-              whiteSpace="nowrap">
+              whiteSpace="nowrap"
+            >
               {/* Tutorial: contentful-and-the-starter-template.md
               {/* Uncomment the line below to render the Greeting field value */}
               {/* {greeting} {' '} */}
