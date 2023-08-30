@@ -421,6 +421,7 @@ type PageLanding implements Entry {
   linkedFrom(allowedLocales: [String]): PageLandingLinkingCollections
   productsCollection(limit: Int = 100, locale: String, preview: Boolean, skip: Int = 0): PageLandingProductsCollection
   seoFields(locale: String, preview: Boolean): ComponentSeo
+  jpopCustom(locale: String): String
   sys: Sys!
 }
 

@@ -21,6 +21,7 @@ fragment PageLandingFields on PageLanding {
       ...PageProductFields
     }
   }
+  jpopCustom
 }
 
 query pageLanding($locale: String, $preview: Boolean) {

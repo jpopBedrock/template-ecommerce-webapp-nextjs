@@ -128,9 +128,10 @@ export const HeroBanner = ({
               transform="translateY(0.33em)"
               whiteSpace="nowrap"
             >
+              {}
               {/* Tutorial: contentful-and-the-starter-template.md
               {/* Uncomment the line below to render the Greeting field value */}
-              {/* {greeting} {' '} */}
+              {jpopCustom}
               {heroBannerHeadline}
             </Heading>
           </motion.div>
