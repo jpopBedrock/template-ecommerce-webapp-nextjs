@@ -13,7 +13,6 @@ export const ProductTileGrid = ({ title, products }: ProductTileGridProps) => {
     <Container>
       {title && (
         <Heading as="h2" mb={3}>
-          Hey Tony
           {title}
         </Heading>
       )}
